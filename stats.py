@@ -13,3 +13,6 @@ def test_mean():
     assert mean([2,4]) == 3.0, 'Simple mean test'
 
  test_mean()
+
+ def test_empty_list():
+    assert mean([]) is None, 'Empty list test'```
