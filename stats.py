@@ -9,4 +9,7 @@ def mean(vals):
     return total/length
 
 
-print(mean([2, 4]))
+def test_mean():
+    assert mean([2,4]) == 3.0, 'Simple mean test'
+
+ test_mean()
