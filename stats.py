@@ -6,13 +6,17 @@ def mean(vals):
     assert type(vals) is list, 'Input format is incorrect'
     total = sum(vals)
     length = len(vals)
-    return total/length
+    if length == 0:
+    	return 0.0
+    else:
+    	return total/length
 
 
 def test_mean():
     assert mean([2,4]) == 3.0, 'Simple mean test'
+test_mean()
 
- test_mean()
+def test_empty_list():
+    assert mean([]) == 0.0
+test_empty_list()
 
- def test_empty_list():
-    assert mean([]) is None, 'Empty list test'```
