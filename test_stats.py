@@ -1,7 +1,7 @@
 #test_stats.py
 
 from stats import mean
-from nose.tools import assert_equal
+from nose.tools import assert_equal, assert_almost_equals
 
 
 def test_mean():
